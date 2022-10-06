@@ -1,0 +1,19 @@
+/* estilos del footer */
+footer{
+    background-color: $color-bgdark;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-textcontrastbgdark;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    height: 5rem;
+    h3{
+        font-size: .8rem;
+        font-weight: 300;
+        margin: 0;
+    }
+}

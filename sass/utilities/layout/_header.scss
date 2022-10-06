@@ -1,0 +1,29 @@
+/* estilos del header */
+header{
+    .navbar{
+        padding: 0;
+        align-items: flex-end;
+        background-color: $color-bgdark;
+        .texto-logo{
+            font-size: 4rem;
+            margin-left: 4rem;
+            margin-right: 0;
+            padding: 0;
+            color: $color-logo;
+            span{
+                font-size: 1.5rem;
+                color: $color-logodetails;
+            }
+        }
+        .navbar-collapse{
+            flex-grow: 0;
+            margin-right: 4rem;
+        }
+        .nav-link{
+            color: $color-textcontrastbgdark;
+            font-weight: bold;
+            margin-right: .9rem;
+            margin-left: .9rem;
+        }
+    }
+}

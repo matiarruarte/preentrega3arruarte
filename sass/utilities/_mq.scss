@@ -1,0 +1,147 @@
+/* mediaqueryes generales */
+
+@media screen and (max-width:450px) {
+    /* mq ajuste logo*/
+    .texto-logo{
+        margin-left: 0;
+    }
+}
+
+/* mediaqueryes tablet */
+@media screen and (max-width: 1023px) {
+    /* mq html home */
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        .cartel-home .banner h1{
+            font-size: 3rem;
+        }
+        .main-home .contenido-principal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-left: 4rem;
+            margin-right: 4rem;
+            img{
+                display: none;
+                order: 2;
+            }
+        }
+        .section-home{
+            background-color: rgb(228, 228, 228);
+            .momentos{
+                margin-left: 4rem;
+                margin-right: 4rem;
+                background-color: white;
+                img{
+                    width: 80%;
+                }
+                p{
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
+            }
+        
+        }
+    }
+    /* mq html miprimercero tablet */
+    .container{
+        .flex-lg-row-reverse{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }     
+    }
+    .section-cero{
+        .container{
+            .col-style{
+                padding-top: 0;
+                .button-pos{
+                        margin-top: 0;
+                        .button{   
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            .flex-lg-row-reverse{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                img{
+                    padding-top: 2rem;
+                }
+            }
+        }
+    }
+    /* mq footer tablet */
+    footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+}
+
+/* mediaqueryes mobile */
+@media screen and (max-width: 600px) {
+    /* mq html home */
+    .grid-container{
+        .cartel-home{
+            .banner{
+                margin-bottom: 0;
+                h1{
+                    font-size: 1.5rem;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 80%;
+                    margin: .5rem;
+                }
+                .contactate{
+                    display: none;
+                }
+            }
+            .button{
+                font-size: 80%;
+            }
+        }
+        .main-home .contenido-principal{
+            img{
+                display: block;
+                width: 100%;
+                margin-top: 1rem;
+            }
+            div{
+                margin: 0;
+                h2{
+                    font-size: 1.3rem;
+                }
+                p{
+                    display: none;
+                }
+            }
+        }
+        .section-home .momentos{
+            img{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            p{
+                padding: 0;
+            }
+        }
+    }
+    /* mq html contacto */
+    #contacto{
+        flex-direction: column;
+    }
+    /* mq footer mobile */
+    footer{
+        h3{
+            text-align: center;
+            margin-bottom: .2rem;
+        }
+    }
+}

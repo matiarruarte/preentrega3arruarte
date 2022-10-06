@@ -1,0 +1,10 @@
+.grid-container{
+    display: grid;
+    height: 248vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 5fr .7fr;
+    grid-template-areas:
+    "cartel cartel cartel"
+    "main main section"
+    "footer footer footer";
+}
