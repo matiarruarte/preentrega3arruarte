@@ -1,6 +1,6 @@
 /* estilos de html vehiculos */
 .vehiculos{
-    display: flex;
+    @include flex-justify-center;
     align-items: center;
     flex-direction: column;
     margin: 2rem;

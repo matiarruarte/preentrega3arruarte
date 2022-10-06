@@ -5,66 +5,20 @@
         padding: 2rem;
         .herobutons .button{
             font-size: 1rem;
-            font-weight: bold;
-            padding: .4rem;
-            padding-left: 4rem;
-            padding-right: 4rem;
-            margin: .4rem;
-            margin-left: 0;
-            margin-top: 1rem;
             margin-bottom: 1rem!important;
-            cursor: pointer;
-            background-color: rgb(3, 0, 29);
-            border-color: rgb(0, 0, 0);
-            border-radius: 5px;
-            border: 2px solid rgba(0, 0, 0, 0.5);
-            color: $color-textcontrastbgdark;
-            a{
-                text-decoration: none;
-                color: $color-textcontrastbgdark;
-            }
-            &:hover{
-                background-color: $color-bglight;
-                color: rgb(3, 0, 29);
-                border: 2px solid rgba(3, 0, 29, 0.887);
-                a{
-                    text-decoration: none;
-                    color: $color-bgdark;
-                }
-            }
+            margin-top: 1rem;
+            @extend %button;
+            @extend %button-hover;
         }
         .button-pos{
             margin-top: 1rem;
             bottom: 2rem;
             .button{
                 font-size: 1rem;
-                font-weight: bold;
-                padding: .4rem;
-                padding-left: 4rem;
-                padding-right: 4rem;
-                margin: .4rem;
-                margin-left: 0;
-                margin-top: 1rem;
                 margin-bottom: 1rem!important;
-                cursor: pointer;
-                background-color: rgb(3, 0, 29);
-                border-color: rgb(0, 0, 0);
-                border-radius: 5px;
-                border: 2px solid rgba(0, 0, 0, 0.5);
-                color: $color-textcontrastbgdark;
-                a{
-                    text-decoration: none;
-                    color: $color-textcontrastbgdark;
-                }
-                &:hover{
-                    background-color: $color-bglight;
-                    color: rgb(3, 0, 29);
-                    border: 2px solid rgba(3, 0, 29, 0.887);
-                    a{
-                        text-decoration: none;
-                        color: $color-bgdark;
-                    }
-                }
+                margin-top: 1rem;
+                @extend %button;
+                @extend %button-hover;
             }
         }
     }

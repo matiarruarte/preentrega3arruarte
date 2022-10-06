@@ -17,10 +17,8 @@
             font-size: 3rem;
         }
         .main-home .contenido-principal{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
+            @include flex-justify-center;
+            @include flex-column-center;
             align-items: center;
             margin-left: 4rem;
             margin-right: 4rem;
@@ -30,11 +28,11 @@
             }
         }
         .section-home{
-            background-color: rgb(228, 228, 228);
+            background-color: $color-bglight;
             .momentos{
                 margin-left: 4rem;
                 margin-right: 4rem;
-                background-color: white;
+                background-color: $color-bglight;
                 img{
                     width: 80%;
                 }
@@ -49,8 +47,7 @@
     /* mq html miprimercero tablet */
     .container{
         .flex-lg-row-reverse{
-            display: flex;
-            justify-content: center;
+            @include flex-justify-center;
             text-align: center;
         }     
     }
@@ -66,8 +63,7 @@
                     }
                 }
             .flex-lg-row-reverse{
-                display: flex;
-                justify-content: center;
+                @include flex-justify-center;
                 text-align: center;
                 img{
                     padding-top: 2rem;
@@ -77,8 +73,7 @@
     }
     /* mq footer tablet */
     footer{
-        display: flex;
-        justify-content: center;
+        @include flex-justify-center;
         flex-direction: column;
         padding: 1.5rem;
     }

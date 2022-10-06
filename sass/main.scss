@@ -1,5 +1,7 @@
 @import "utilities/base/reset.scss";
 @import "utilities/vars";
+@import "utilities/mixins";
+@import "utilities/extend";
 @import "utilities/base/general.scss";
 @import "utilities/layout/header";
 @import "utilities/layout/grid";
