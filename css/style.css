@@ -172,6 +172,9 @@ main {
 .py-5 {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
+  .py-5 .col-10 img {
+    border: 1px;
+    border-radius: 3px; }
   .py-5 .col-style {
     padding: 2rem; }
     .py-5 .col-style .herobutons .button {

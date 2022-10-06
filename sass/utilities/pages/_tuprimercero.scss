@@ -1,6 +1,10 @@
 .py-5{
     padding-top: 0!important;
     padding-bottom: 0!important;
+    .col-10 img{
+        border: 1px;
+        border-radius: 3px;
+    }
     .col-style{
         padding: 2rem;
         .herobutons .button{
