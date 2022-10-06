@@ -28,7 +28,7 @@
             }
         }
         .section-home{
-            background-color: $color-bglight;
+            background-color: $color-bggris;
             .momentos{
                 margin-left: 4rem;
                 margin-right: 4rem;
@@ -46,29 +46,31 @@
     }
     /* mq html miprimercero tablet */
     .container{
+        align-items: center;
+        .section-cero{
+            .container{
+                margin-left: 0!important;
+                justify-content: center;
+                align-items: center;
+            }
+            .center-block2{
+                justify-content: center!important;
+                align-items: center!important;
+            }
+            justify-content: center;
+            align-items: center;
+        }
         .flex-lg-row-reverse{
             @include flex-justify-center;
             text-align: center;
         }     
     }
-    .section-cero{
-        .container{
-            .col-style{
-                padding-top: 0;
-                .button-pos{
-                        margin-top: 0;
-                        .button{   
-                            margin-bottom: 2rem;
-                        }
-                    }
-                }
-            .flex-lg-row-reverse{
-                @include flex-justify-center;
-                text-align: center;
-                img{
-                    padding-top: 2rem;
-                }
-            }
+    /* mq html vehiculos tablet */
+    .vehiculos{
+        margin: 0;
+        padding: 0;
+        .ventas{
+            padding-top: 2rem
         }
     }
     /* mq footer tablet */
@@ -103,6 +105,8 @@
             }
         }
         .main-home .contenido-principal{
+            margin-left: 0;
+            margin-right: 0;
             img{
                 display: block;
                 width: 100%;
@@ -119,6 +123,8 @@
             }
         }
         .section-home .momentos{
+            margin-left: 0;
+            margin-right: 0;
             img{
                 width: 100%;
                 margin-bottom: 1rem;
@@ -131,6 +137,14 @@
     /* mq html contacto */
     #contacto{
         flex-direction: column;
+    }
+    /* mq html vehiculos tablet */
+    .vehiculos{
+        .ventas{
+            padding-top: 2rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     /* mq footer mobile */
     footer{

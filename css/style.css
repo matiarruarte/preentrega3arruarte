@@ -308,7 +308,7 @@ footer {
         display: none;
         order: 2; }
     .grid-container .section-home {
-      background-color: white; }
+      background-color: #e4e4e4; }
       .grid-container .section-home .momentos {
         margin-left: 4rem;
         margin-right: 4rem;
@@ -319,21 +319,27 @@ footer {
           padding-left: 4rem;
           padding-right: 4rem; }
   /* mq html miprimercero tablet */
-  .container .flex-lg-row-reverse {
-    display: flex;
-    justify-content: center;
-    text-align: center; }
-  .section-cero .container .col-style {
-    padding-top: 0; }
-    .section-cero .container .col-style .button-pos {
-      margin-top: 0; }
-      .section-cero .container .col-style .button-pos .button {
-        margin-bottom: 2rem; }
-  .section-cero .container .flex-lg-row-reverse {
-    display: flex;
-    justify-content: center;
-    text-align: center; }
-    .section-cero .container .flex-lg-row-reverse img {
+  .container {
+    align-items: center; }
+    .container .section-cero {
+      justify-content: center;
+      align-items: center; }
+      .container .section-cero .container {
+        margin-left: 0 !important;
+        justify-content: center;
+        align-items: center; }
+      .container .section-cero .center-block2 {
+        justify-content: center !important;
+        align-items: center !important; }
+    .container .flex-lg-row-reverse {
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+  /* mq html vehiculos tablet */
+  .vehiculos {
+    margin: 0;
+    padding: 0; }
+    .vehiculos .ventas {
       padding-top: 2rem; }
   /* mq footer tablet */
   footer {
@@ -357,24 +363,35 @@ footer {
       display: none; }
   .grid-container .cartel-home .button {
     font-size: 80%; }
-  .grid-container .main-home .contenido-principal img {
-    display: block;
-    width: 100%;
-    margin-top: 1rem; }
-  .grid-container .main-home .contenido-principal div {
-    margin: 0; }
-    .grid-container .main-home .contenido-principal div h2 {
-      font-size: 1.3rem; }
-    .grid-container .main-home .contenido-principal div p {
-      display: none; }
-  .grid-container .section-home .momentos img {
-    width: 100%;
-    margin-bottom: 1rem; }
-  .grid-container .section-home .momentos p {
-    padding: 0; }
+  .grid-container .main-home .contenido-principal {
+    margin-left: 0;
+    margin-right: 0; }
+    .grid-container .main-home .contenido-principal img {
+      display: block;
+      width: 100%;
+      margin-top: 1rem; }
+    .grid-container .main-home .contenido-principal div {
+      margin: 0; }
+      .grid-container .main-home .contenido-principal div h2 {
+        font-size: 1.3rem; }
+      .grid-container .main-home .contenido-principal div p {
+        display: none; }
+  .grid-container .section-home .momentos {
+    margin-left: 0;
+    margin-right: 0; }
+    .grid-container .section-home .momentos img {
+      width: 100%;
+      margin-bottom: 1rem; }
+    .grid-container .section-home .momentos p {
+      padding: 0; }
   /* mq html contacto */
   #contacto {
     flex-direction: column; }
+  /* mq html vehiculos tablet */
+  .vehiculos .ventas {
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0; }
   /* mq footer mobile */
   footer h3 {
     text-align: center;
